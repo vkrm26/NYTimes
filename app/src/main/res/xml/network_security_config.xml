@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************
+  ~ * Copyright (C) 2016-2017 Red Brick Lane Marketing Pvt Ltd - All Rights Reserved
+  ~ *
+  ~ * This file is part of Zapr Android SDK and is being maintained by udayan .
+  ~ *
+  ~ * Zapr Android SDK can not be copied and/or distributed without the explicit
+  ~ * permission of Red Brick Lane Marketing Pvt Ltd
+  ~ *******************************************************/
+  -->
+
+<network-security-config>
+    <debug-overrides>
+        <trust-anchors>
+            <!-- Trust user added CAs while debuggable only -->
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

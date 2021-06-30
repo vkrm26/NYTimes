@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".feed.MainActivity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/img_full_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"/>
+
+    <View
+        android:background="@drawable/txt_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/txt_sub_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        tools:text="In Long Shot, Nurse And Political Novice Defeats Buffalo Mayor" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_sub_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/txt_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:maxLines="6"
+        android:ellipsize="end"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:text="Ms. Walton, 38, a democratic socialist who has never held political office, defeated Byron Brown, a four-term incumbent.Ms. Walton, 38, a democratic socialist who has never held political office, defeated Byron Brown, a four-term incumbent.Ms. Walton, 38, a democratic socialist who has never held political office, defeated Byron Brown, a four-term incumbent." />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        tools:text="2021-06-23" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
